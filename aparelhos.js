@@ -1,9 +1,7 @@
 let consertos = require('./consertos');
 
-//console.log(consertos);
+let aparelhosProntos = consertos.filter(conserto => conserto.pronto === true);
+console.log('APARELHOS PRONTOS:', aparelhosProntos);
 
-let aparelhosProntos = consertos.filter(conserto => consertos.pronto === true);
-console.log (`APARELHOS PRONTOS: ${aparelhosProntos}`);
-
-let emReparo = consertos.filter(conserto => consertos.pronto === false);
-console.log (`APARELHOS QUE AINDA NÃO ESTÃO PRONTOS: ${emReparo}`);
+let emReparo = consertos.filter(conserto => conserto.pronto === false);
+console.log ('APARELHOS QUE AINDA NÃO ESTÃO PRONTOS:', emReparo);

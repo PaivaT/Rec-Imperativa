@@ -1,39 +1,109 @@
 let consertos = [
 
     {
-        aparelho: 'Samsung A10',
-        itensConsertados: ['tela', 'bateria', 'teclado'],
-        valores: [10, 100, 25],
+        aparelho: 'Samsung S20',
+        itensConsertados: ['tela', 'teclado', 'camera'],
+        valor: [10, 90, 200],
         pronto: true
     },
 
     {
         aparelho: 'IPhone X',
-        itensConsertados: ['tela', 'USB'],
-        valores: [10, 50],
+        itensConsertados: ['tela', 'entrada USB'],
+        valor: [10, 70],
         pronto: false
     },
 
     {
         aparelho: 'Moto G Play',
         itensConsertados: ['tela'],
-        valores: [100],
+        valor: [100],
         pronto: false
     },
 
     {
         aparelho: 'Samsung S21',
         itensConsertados: ['bateria'],
-        valores: [200],
+        valor: [200],
+        pronto: true
+    },
+
+    {
+        aparelho: 'IPhone 13 Pro Max',
+        itensConsertados: ['tela'],
+        valor: [500],
+        pronto: true
+    },
+
+    {
+        aparelho: 'Redmi Note 8',
+        itensConsertados: ['bateria, entrada USB, tela'],
+        valor: [200, 100, 200],
+        pronto: false
+    },
+
+    {
+        aparelho: 'LG K10',
+        itensConsertados: ['entrada USB, tela, botão POWER' ],
+        valor: [100, 75, 10],
+        pronto: true
+    },
+
+    {
+        aparelho: 'Galaxy S8',
+        itensConsertados: ['tela, bateria'],
+        valor: [300, 250],
+        pronto: true
+    },
+
+    {
+        aparelho: 'Moto G100',
+        itensConsertados: ['botão POWER'],
+        valor: [50],
+        pronto: true
+    },
+
+    {
+        aparelho: 'Galaxy S20FE',
+        itensConsertados: ['placa mãe'],
+        valor: [2500],
+        pronto: false
+    },
+
+    {
+        aparelho: 'POCO X3',
+        itensConsertados: ['camera, bateria'],
+        valor: [400, 200],
+        pronto: true
+    },
+
+    {
+        aparelho: 'Galaxy Pocket',
+        itensConsertados: ['tela, bateria, camera, botão POWER'],
+        valor: [300, 250, 100, 50],
+        pronto: false
+    },
+
+    {
+        aparelho: 'Galaxy Note 10',
+        itensConsertados: ['SPen, bateria'],
+        valor: [1500, 250],
+        pronto: true
+    },
+
+    {
+        aparelho: 'Iphone SE',
+        itensConsertados: ['camera, tela'],
+        valor: [500, 375],
+        pronto: false
+    },
+
+    {
+        aparelho: 'Moto Z Play',
+        itensConsertados: ['bateria'],
+        valor: [500],
         pronto: true
     }
-
 ]
 
-/*let aparelhosProntos = consertos.filter(conserto => conserto.pronto === true);
-console.log `APARELHOS PRONTOS: ${aparelhosProntos}`;
-
-let emReparo = consertos.filter(conserto => conserto.pronto === false);
-console.log `APARELHOS QUE AINDA NÃO ESTÃO PRONTOS: ${emReparo}`;*/
-   
-module.export = consertos;
+module.exports = consertos;
