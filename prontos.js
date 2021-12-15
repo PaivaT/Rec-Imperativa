@@ -1,6 +1,6 @@
 let consertos = require('./consertos');
 
-consertos.forEach(conserto => {
+    consertos.forEach(conserto => {
     if(conserto.pronto === true) {
         valorTotal = 0;
 
